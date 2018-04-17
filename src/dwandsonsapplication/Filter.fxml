@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="278.0" prefWidth="718.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="dwandsonsapplication.FilterController">
+  <children>
+    <Label layoutX="8.0" layoutY="45.0" text="Field 1" />
+    <Label layoutX="8.0" layoutY="164.0" text="Field 2" />
+    <TextArea fx:id="field1Text" layoutX="509.0" layoutY="22.0" prefHeight="107.0" prefWidth="200.0" text="" wrapText="true" />
+    <TextArea fx:id="field2Text" layoutX="509.0" layoutY="146.0" prefHeight="107.0" prefWidth="200.0" text="" wrapText="true" />
+    <RadioButton fx:id="andOP" layoutX="269.0" layoutY="109.0" mnemonicParsing="false" text="And" />
+    <CheckBox fx:id="useSecField" layoutX="60.0" layoutY="109.0" mnemonicParsing="false" text="Use Second Field " />
+    <Button fx:id="filter" layoutX="169.0" layoutY="234.0" mnemonicParsing="false" onAction="#filterResults" text="Start Filtering" />
+    <ComboBox fx:id="field1" disable="false" layoutX="60.0" layoutY="46.0" prefWidth="145.0" promptText="Select Field...">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="filter2" disable="false" layoutX="247.0" layoutY="155.0" prefWidth="221.0" promptText="Select Filter Option...">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="filter1" layoutX="247.0" layoutY="46.0" prefWidth="221.0" promptText="Select Filter Option...">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="field2" disable="false" layoutX="60.0" layoutY="159.0" prefWidth="145.0" promptText="Select Field...">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+  </children>
+</AnchorPane>
